@@ -1,2 +1,29 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import './variables.scss';
+
+body {
+  margin-top: 56px;
+}
+.navbar {
+  background-color: $lightOrange;
+  a {
+    color: black;
+  }
+}
+.navbar-nav {
+  margin-left: auto;
+  .nav-item {
+    .like {
+      padding-right: 0.5rem;
+      color: $yellowMedium;
+    }
+    .profile {
+      padding-right: 0.5rem;
+      color: $orange;
+    }
+  }
+}
+
+.test {
+  height: 1000px;
+}

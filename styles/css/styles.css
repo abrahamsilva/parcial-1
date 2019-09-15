@@ -9655,5 +9655,31 @@ h3 {
     border-color: #dee2e6;
   }
 }
+body {
+  margin-top: 56px;
+}
+
+.navbar {
+  background-color: #fff8f0;
+}
+.navbar a {
+  color: black;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+.navbar-nav .nav-item .like {
+  padding-right: 0.5rem;
+  color: #ffbe33;
+}
+.navbar-nav .nav-item .profile {
+  padding-right: 0.5rem;
+  color: #ff8811;
+}
+
+.test {
+  height: 1000px;
+}
 
 /*# sourceMappingURL=styles.css.map */
