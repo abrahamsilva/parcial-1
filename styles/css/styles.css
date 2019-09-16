@@ -9669,6 +9669,9 @@ body {
 .navbar-nav {
   margin-left: auto;
 }
+.navbar-nav .active {
+  color: #9dd9d2;
+}
 .navbar-nav .nav-item .like {
   padding-right: 0.5rem;
   color: #ffbe33;
@@ -9678,8 +9681,85 @@ body {
   color: #ff8811;
 }
 
-.test {
-  height: 1000px;
+.big-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+.big-wrapper .sidebar {
+  padding: 1.5rem;
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+@media (max-width: 768px) {
+  .big-wrapper .sidebar {
+    margin-left: -300px;
+  }
+}
+.big-wrapper .sidebar .sidebar-header {
+  padding-bottom: 2rem;
+}
+.big-wrapper .sidebar .sidebar-header .hide-button {
+  padding-bottom: 5rem;
+}
+.big-wrapper .sidebar .sidebar-header .hide-button .button {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.big-wrapper .sidebar .sidebar-header .hide-button .button .span {
+  font-size: 0.8rem;
+}
+.big-wrapper .sidebar .sidebar-header .hide-button .button:hover {
+  color: #9dd9d2;
+}
+.big-wrapper .active {
+  margin-left: -300px;
+}
+@media (max-width: 768px) {
+  .big-wrapper .active {
+    margin-left: 0;
+  }
+}
+.big-wrapper .categories .item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.big-wrapper .categories .item .block {
+  min-width: 50px;
+  max-height: 50px;
+  min-height: 50px;
+  margin-right: 1rem;
+  border-radius: 8px;
+}
+.big-wrapper .categories .item .sports {
+  background-color: #f5d98f;
+}
+.big-wrapper .categories .item .education {
+  background-color: #9dd9d2;
+}
+.big-wrapper .categories .item .culture {
+  background-color: #fff8f0;
+}
+.big-wrapper .categories .item .add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #ff8811;
+}
+.big-wrapper .categories .item .info .title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding-bottom: 0.2rem;
+}
+.big-wrapper .categories .item .info .description {
+  font-size: 0.8rem;
+}
+.big-wrapper .categories .item:last-child {
+  padding-bottom: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
