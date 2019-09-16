@@ -9821,28 +9821,39 @@ body {
 .big-wrapper .content .welcome h3 .highlight {
   color: #ff8811;
 }
-.big-wrapper .content .news .title {
-  padding: 0.2rem 1rem;
-  border-left: solid 0.7rem #9dd9d2;
-  font-size: 1.7rem;
-  margin-bottom: 2rem;
-}
-.big-wrapper .content .news .card-deck {
+.big-wrapper .content .card-deck {
   justify-content: space-evenly;
 }
 @media (max-width: 768px) {
-  .big-wrapper .content .news .card-deck {
+  .big-wrapper .content .card-deck {
     align-items: center;
   }
 }
-.big-wrapper .content .news .card-deck .card {
+.big-wrapper .content .card-deck .card {
   max-width: 300px;
   min-width: 300px;
   margin-bottom: 1.5rem;
 }
-.big-wrapper .content .news .card-deck .card .card-img-top {
+.big-wrapper .content .card-deck .card .card-img-top {
   width: 100%;
   height: auto;
+}
+.big-wrapper .content .section {
+  padding-bottom: 3rem;
+}
+.big-wrapper .content .section .title {
+  padding: 0.2rem 1rem;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+.big-wrapper .content .section .news {
+  border-left: solid 0.7rem #9dd9d2;
+}
+.big-wrapper .content .section .education {
+  border-left: solid 0.7rem #66bb6a;
+}
+.big-wrapper .content .section:last-child {
+  padding-bottom: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

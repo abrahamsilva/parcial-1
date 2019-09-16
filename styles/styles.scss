@@ -163,31 +163,37 @@ body {
         }
       }
     }
-
-    .news {
-      .title {
-        padding: 0.2rem 1rem;
-        border-left: solid 0.7rem $lightBlue;
-        font-size: 1.7rem;
-        margin-bottom: 2rem;
+    .card-deck {
+      justify-content: space-evenly;
+      @media (max-width: 768px) {
+        align-items: center;
       }
-      .card-deck {
-        justify-content: space-evenly;
-        @media (max-width: 768px) {
-          align-items: center;
-        }
-        .card {
-          max-width: 300px;
-          min-width: 300px;
-          margin-bottom: 1.5rem;
-          .card-img-top {
-            width: 100%;
-            height: auto;
-          }
+      .card {
+        max-width: 300px;
+        min-width: 300px;
+        margin-bottom: 1.5rem;
+        .card-img-top {
+          width: 100%;
+          height: auto;
         }
       }
     }
-    .education {
+    .section {
+      padding-bottom: 3rem;
+      .title {
+        padding: 0.2rem 1rem;
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+      }
+      .news {
+        border-left: solid 0.7rem $lightBlue;
+      }
+      .education {
+        border-left: solid 0.7rem $green;
+      }
+    }
+    .section:last-child {
+      padding-bottom: 0;
     }
   }
 }
