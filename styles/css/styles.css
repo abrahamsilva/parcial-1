@@ -9743,8 +9743,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   background-color: #ff8811;
+}
+.big-wrapper .sidebar .categories .item .add a {
+  color: white;
 }
 .big-wrapper .sidebar .categories .item .info .title {
   font-size: 0.9rem;
@@ -9853,6 +9855,57 @@ body {
   border-left: solid 0.7rem #66bb6a;
 }
 .big-wrapper .content .section:last-child {
+  padding-bottom: 0;
+}
+
+.add-topic .content {
+  padding: 1.5rem 3rem;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .add-topic .content {
+    padding: 1.5rem;
+  }
+}
+.add-topic .content .search-bar {
+  padding-bottom: 5rem;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+}
+.add-topic .content .card-deck {
+  justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  .add-topic .content .card-deck {
+    align-items: center;
+  }
+}
+.add-topic .content .card-deck .card {
+  max-width: 300px;
+  min-width: 300px;
+  margin-bottom: 1.5rem;
+}
+.add-topic .content .card-deck .card .card-img-top {
+  width: 100%;
+  height: auto;
+}
+.add-topic .content .section {
+  padding-bottom: 3rem;
+}
+.add-topic .content .section .title {
+  padding: 0.2rem 1rem;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+.add-topic .content .section .news {
+  border-left: solid 0.7rem #9dd9d2;
+}
+.add-topic .content .section .education {
+  border-left: solid 0.7rem #66bb6a;
+}
+.add-topic .content .section:last-child {
   padding-bottom: 0;
 }
 

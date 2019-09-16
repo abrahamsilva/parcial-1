@@ -88,8 +88,10 @@ body {
           display: flex;
           align-items: center;
           justify-content: center;
-          color: white;
           background-color: $orange;
+          a {
+            color: white;
+          }
         }
         .info {
           .title {
@@ -162,6 +164,55 @@ body {
           color: $orange;
         }
       }
+    }
+    .card-deck {
+      justify-content: space-evenly;
+      @media (max-width: 768px) {
+        align-items: center;
+      }
+      .card {
+        max-width: 300px;
+        min-width: 300px;
+        margin-bottom: 1.5rem;
+        .card-img-top {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .section {
+      padding-bottom: 3rem;
+      .title {
+        padding: 0.2rem 1rem;
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+      }
+      .news {
+        border-left: solid 0.7rem $lightBlue;
+      }
+      .education {
+        border-left: solid 0.7rem $green;
+      }
+    }
+    .section:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.add-topic {
+  .content {
+    padding: 1.5rem 3rem;
+    width: 100%;
+    @media (max-width: 768px) {
+      padding: 1.5rem;
+    }
+    .search-bar {
+      padding-bottom: 5rem;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 2rem;
     }
     .card-deck {
       justify-content: space-evenly;
