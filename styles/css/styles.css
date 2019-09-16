@@ -9758,7 +9758,7 @@ body {
   padding-bottom: 0;
 }
 .big-wrapper .add-padding {
-  padding-left: 20.25rem;
+  padding-left: 22.25rem;
 }
 @media (max-width: 768px) {
   .big-wrapper .add-padding {
@@ -9776,11 +9776,20 @@ body {
     padding-left: 1.5rem;
   }
 }
+.big-wrapper .hide-nav {
+  margin-left: -300px;
+}
 .big-wrapper .content {
   transition: all 0.2s;
   padding-top: 1.5rem;
   padding-right: 3rem;
   padding-bottom: 1.5rem;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .big-wrapper .content {
+    padding-right: 1.5rem;
+  }
 }
 .big-wrapper .content .button {
   cursor: pointer;
@@ -9804,6 +9813,7 @@ body {
 }
 .big-wrapper .content .welcome {
   padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 .big-wrapper .content .welcome h3 {
   font-size: 4rem;
@@ -9811,8 +9821,28 @@ body {
 .big-wrapper .content .welcome h3 .highlight {
   color: #ff8811;
 }
-.big-wrapper .hide-nav {
-  margin-left: -300px;
+.big-wrapper .content .news .title {
+  padding: 0.2rem 1rem;
+  border-left: solid 0.7rem #9dd9d2;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+.big-wrapper .content .news .card-deck {
+  justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  .big-wrapper .content .news .card-deck {
+    align-items: center;
+  }
+}
+.big-wrapper .content .news .card-deck .card {
+  max-width: 300px;
+  min-width: 300px;
+  margin-bottom: 1.5rem;
+}
+.big-wrapper .content .news .card-deck .card .card-img-top {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

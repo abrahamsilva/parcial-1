@@ -108,7 +108,7 @@ body {
     }
   }
   .add-padding {
-    padding-left: 20.25rem;
+    padding-left: 22.25rem;
     @media (max-width: 768px) {
       padding-left: 1.5rem;
     }
@@ -122,11 +122,18 @@ body {
       padding-left: 1.5rem;
     }
   }
+  .hide-nav {
+    margin-left: -300px;
+  }
   .content {
     transition: all 0.2s;
     padding-top: 1.5rem;
     padding-right: 3rem;
     padding-bottom: 1.5rem;
+    width: 100%;
+    @media (max-width: 768px) {
+      padding-right: 1.5rem;
+    }
 
     .button {
       cursor: pointer;
@@ -148,6 +155,7 @@ body {
     }
     .welcome {
       padding-top: 2rem;
+      padding-bottom: 4rem;
       h3 {
         font-size: 4rem;
         .highlight {
@@ -155,8 +163,31 @@ body {
         }
       }
     }
-  }
-  .hide-nav {
-    margin-left: -300px;
+
+    .news {
+      .title {
+        padding: 0.2rem 1rem;
+        border-left: solid 0.7rem $lightBlue;
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+      }
+      .card-deck {
+        justify-content: space-evenly;
+        @media (max-width: 768px) {
+          align-items: center;
+        }
+        .card {
+          max-width: 300px;
+          min-width: 300px;
+          margin-bottom: 1.5rem;
+          .card-img-top {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    .education {
+    }
   }
 }
