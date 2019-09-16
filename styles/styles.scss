@@ -4,6 +4,7 @@
 body {
   margin-top: 56px;
 }
+
 .navbar {
   background-color: $lightOrange;
   a {
@@ -30,13 +31,17 @@ body {
 .big-wrapper {
   display: flex;
   width: 100%;
-  align-items: stretch;
 
   .sidebar {
     padding: 1.5rem;
-    min-width: 300px;
-    max-width: 300px;
-    min-height: 100vh;
+    padding-bottom: 5rem;
+    width: 300px;
+    z-index: 999;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    overflow: scroll;
+    transition: all 0.3s;
     background-color: $lightGrey;
     @media (max-width: 768px) {
       margin-left: -300px;
@@ -45,6 +50,7 @@ body {
       padding-bottom: 2rem;
       .hide-button {
         padding-bottom: 5rem;
+
         .button {
           cursor: pointer;
           font-size: 1.2rem;
@@ -57,54 +63,100 @@ body {
         }
       }
     }
-  }
-  .active {
-    margin-left: -300px;
-    @media (max-width: 768px) {
-      margin-left: 0;
-    }
-  }
-  .categories {
-    .item {
-      display: flex;
-      align-items: center;
-      padding-bottom: 2rem;
-      .block {
-        min-width: 50px;
-        max-height: 50px;
-        min-height: 50px;
-        margin-right: 1rem;
-        border-radius: 8px;
-      }
-      .sports {
-        background-color: $lightYellow;
-      }
-      .education {
-        background-color: $lightBlue;
-      }
-      .culture {
-        background-color: $lightOrange;
-      }
-      .add {
+    .categories {
+      .item {
         display: flex;
         align-items: center;
-        justify-content: center;
-        color: white;
-        background-color: $orange;
-      }
-      .info {
-        .title {
-          font-size: 0.9rem;
-          font-weight: bold;
-          padding-bottom: 0.2rem;
+        padding-bottom: 2rem;
+        .block {
+          min-width: 50px;
+          max-height: 50px;
+          min-height: 50px;
+          margin-right: 1rem;
+          border-radius: 8px;
         }
-        .description {
-          font-size: 0.8rem;
+        .sports {
+          background-color: $lightYellow;
+        }
+        .education {
+          background-color: $lightBlue;
+        }
+        .culture {
+          background-color: $lightOrange;
+        }
+        .add {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          background-color: $orange;
+        }
+        .info {
+          .title {
+            font-size: 0.9rem;
+            font-weight: bold;
+            padding-bottom: 0.2rem;
+          }
+          .description {
+            font-size: 0.8rem;
+          }
+        }
+      }
+      .item:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .add-padding {
+    padding-left: 20.25rem;
+    @media (max-width: 768px) {
+      padding-left: 1.5rem;
+    }
+  }
+  .reset-margin {
+    margin-left: 0;
+  }
+  .normalize-padding {
+    padding-left: 3rem;
+    @media (max-width: 768px) {
+      padding-left: 1.5rem;
+    }
+  }
+  .content {
+    transition: all 0.2s;
+    padding-top: 1.5rem;
+    padding-right: 3rem;
+    padding-bottom: 1.5rem;
+
+    .button {
+      cursor: pointer;
+      font-size: 1.2rem;
+      display: none;
+      position: absolute;
+      @media (max-width: 768px) {
+        display: block;
+      }
+      .span {
+        font-size: 0.8rem;
+      }
+    }
+    .enable {
+      display: block;
+    }
+    .button:hover {
+      color: $lightBlue;
+    }
+    .welcome {
+      padding-top: 2rem;
+      h3 {
+        font-size: 4rem;
+        .highlight {
+          color: $orange;
         }
       }
     }
-    .item:last-child {
-      padding-bottom: 0;
-    }
+  }
+  .hide-nav {
+    margin-left: -300px;
   }
 }

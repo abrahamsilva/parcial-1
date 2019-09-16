@@ -9684,13 +9684,17 @@ body {
 .big-wrapper {
   display: flex;
   width: 100%;
-  align-items: stretch;
 }
 .big-wrapper .sidebar {
   padding: 1.5rem;
-  min-width: 300px;
-  max-width: 300px;
-  min-height: 100vh;
+  padding-bottom: 5rem;
+  width: 300px;
+  z-index: 999;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  overflow: scroll;
+  transition: all 0.3s;
   background-color: #fafafa;
 }
 @media (max-width: 768px) {
@@ -9714,52 +9718,101 @@ body {
 .big-wrapper .sidebar .sidebar-header .hide-button .button:hover {
   color: #9dd9d2;
 }
-.big-wrapper .active {
-  margin-left: -300px;
-}
-@media (max-width: 768px) {
-  .big-wrapper .active {
-    margin-left: 0;
-  }
-}
-.big-wrapper .categories .item {
+.big-wrapper .sidebar .categories .item {
   display: flex;
   align-items: center;
   padding-bottom: 2rem;
 }
-.big-wrapper .categories .item .block {
+.big-wrapper .sidebar .categories .item .block {
   min-width: 50px;
   max-height: 50px;
   min-height: 50px;
   margin-right: 1rem;
   border-radius: 8px;
 }
-.big-wrapper .categories .item .sports {
+.big-wrapper .sidebar .categories .item .sports {
   background-color: #f5d98f;
 }
-.big-wrapper .categories .item .education {
+.big-wrapper .sidebar .categories .item .education {
   background-color: #9dd9d2;
 }
-.big-wrapper .categories .item .culture {
+.big-wrapper .sidebar .categories .item .culture {
   background-color: #fff8f0;
 }
-.big-wrapper .categories .item .add {
+.big-wrapper .sidebar .categories .item .add {
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   background-color: #ff8811;
 }
-.big-wrapper .categories .item .info .title {
+.big-wrapper .sidebar .categories .item .info .title {
   font-size: 0.9rem;
   font-weight: bold;
   padding-bottom: 0.2rem;
 }
-.big-wrapper .categories .item .info .description {
+.big-wrapper .sidebar .categories .item .info .description {
   font-size: 0.8rem;
 }
-.big-wrapper .categories .item:last-child {
+.big-wrapper .sidebar .categories .item:last-child {
   padding-bottom: 0;
+}
+.big-wrapper .add-padding {
+  padding-left: 20.25rem;
+}
+@media (max-width: 768px) {
+  .big-wrapper .add-padding {
+    padding-left: 1.5rem;
+  }
+}
+.big-wrapper .reset-margin {
+  margin-left: 0;
+}
+.big-wrapper .normalize-padding {
+  padding-left: 3rem;
+}
+@media (max-width: 768px) {
+  .big-wrapper .normalize-padding {
+    padding-left: 1.5rem;
+  }
+}
+.big-wrapper .content {
+  transition: all 0.2s;
+  padding-top: 1.5rem;
+  padding-right: 3rem;
+  padding-bottom: 1.5rem;
+}
+.big-wrapper .content .button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .big-wrapper .content .button {
+    display: block;
+  }
+}
+.big-wrapper .content .button .span {
+  font-size: 0.8rem;
+}
+.big-wrapper .content .enable {
+  display: block;
+}
+.big-wrapper .content .button:hover {
+  color: #9dd9d2;
+}
+.big-wrapper .content .welcome {
+  padding-top: 2rem;
+}
+.big-wrapper .content .welcome h3 {
+  font-size: 4rem;
+}
+.big-wrapper .content .welcome h3 .highlight {
+  color: #ff8811;
+}
+.big-wrapper .hide-nav {
+  margin-left: -300px;
 }
 
 /*# sourceMappingURL=styles.css.map */
