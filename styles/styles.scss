@@ -1,10 +1,6 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import './variables.scss';
 
-body {
-  margin-top: 56px;
-}
-
 .navbar {
   background-color: $lightOrange;
   a {
@@ -248,3 +244,135 @@ body {
     }
   }
 }
+
+.login-body{
+  //background: $lightBlue;
+  background-image: url("../../assets/backgrounds/login-bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  //background: linear-gradient(to right, $lightOrange, $lightYellow);
+}
+
+.small-margin{
+  margin: $smallMargin;
+}
+
+.login-card {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+ 
+
+  .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+  .card-body {
+    padding: 2rem;
+  }
+  
+  .form-login {
+    width: 100%;
+  }
+
+  .form-login .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+  }
+
+  .form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .form-label-group input {
+    height: auto;
+    padding:8px;
+    border-radius: 2rem;
+  }
+
+  .btn-google{
+    background-color: rgb(241, 76, 76);
+    color: white;
+
+    &:hover{
+      background-color: rgb(230, 59, 59);
+
+    }
+  }
+
+  .btn-login{
+    background-color: $orange;
+    color: white;
+    &:hover{
+      background-color: $orangeHover;
+
+    }
+  }
+
+  .btn-facebook{
+    background-color: rgb(78, 119, 255);
+    color: white;
+    &:hover{
+      background-color: rgb(70, 106, 224);
+    }
+  }
+}
+
+.landing{
+
+  
+  .welcome-left{
+    h5{
+      margin-top: $smallMargin*2;
+      font-size: 38px;
+      font-style: bold;
+    }
+
+    p{
+      margin-top: $smallMargin;
+      font-size: 21px;
+      width: 65%;
+    }
+
+    .call-for-action{
+      background-color: $orange;
+      color:white;
+      &:hover{
+        background-color: $orangeHover;
+      }
+    }
+
+  }
+
+  .welcome-right{
+
+    img{
+      margin-top: $smallMargin * 4;
+
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+  .row{
+    width: auto;
+  }
+  .first-row{
+    height: 100%;
+    background-image: url("../../assets/backgrounds/welcome-bg.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+
+}
+
+

@@ -9655,12 +9655,8 @@ h3 {
     border-color: #dee2e6;
   }
 }
-body {
-  margin-top: 56px;
-}
-
 .navbar {
-  background-color: #fff8f0;
+  background-color: #FFF8F0;
 }
 .navbar a {
   color: black;
@@ -9670,7 +9666,7 @@ body {
   margin-left: auto;
 }
 .navbar-nav .active {
-  color: #9dd9d2;
+  color: #9DD9D2;
 }
 .navbar-nav .nav-item .like {
   padding-right: 0.5rem;
@@ -9678,7 +9674,7 @@ body {
 }
 .navbar-nav .nav-item .profile {
   padding-right: 0.5rem;
-  color: #ff8811;
+  color: #FF8811;
 }
 
 .big-wrapper {
@@ -9716,7 +9712,7 @@ body {
   font-size: 0.8rem;
 }
 .big-wrapper .sidebar .sidebar-header .hide-button .button:hover {
-  color: #9dd9d2;
+  color: #9DD9D2;
 }
 .big-wrapper .sidebar .categories .item {
   display: flex;
@@ -9731,19 +9727,19 @@ body {
   border-radius: 8px;
 }
 .big-wrapper .sidebar .categories .item .sports {
-  background-color: #f5d98f;
+  background-color: #F4D06F;
 }
 .big-wrapper .sidebar .categories .item .education {
-  background-color: #9dd9d2;
+  background-color: #9DD9D2;
 }
 .big-wrapper .sidebar .categories .item .culture {
-  background-color: #fff8f0;
+  background-color: #FFF8F0;
 }
 .big-wrapper .sidebar .categories .item .add {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ff8811;
+  background-color: #FF8811;
 }
 .big-wrapper .sidebar .categories .item .add a {
   color: white;
@@ -9811,7 +9807,7 @@ body {
   display: block;
 }
 .big-wrapper .content .button:hover {
-  color: #9dd9d2;
+  color: #9DD9D2;
 }
 .big-wrapper .content .welcome {
   padding-top: 2rem;
@@ -9821,7 +9817,7 @@ body {
   font-size: 4rem;
 }
 .big-wrapper .content .welcome h3 .highlight {
-  color: #ff8811;
+  color: #FF8811;
 }
 .big-wrapper .content .card-deck {
   justify-content: space-evenly;
@@ -9849,7 +9845,7 @@ body {
   margin-bottom: 2rem;
 }
 .big-wrapper .content .section .news {
-  border-left: solid 0.7rem #9dd9d2;
+  border-left: solid 0.7rem #9DD9D2;
 }
 .big-wrapper .content .section .education {
   border-left: solid 0.7rem #66bb6a;
@@ -9900,13 +9896,110 @@ body {
   margin-bottom: 2rem;
 }
 .add-topic .content .section .news {
-  border-left: solid 0.7rem #9dd9d2;
+  border-left: solid 0.7rem #9DD9D2;
 }
 .add-topic .content .section .education {
   border-left: solid 0.7rem #66bb6a;
 }
 .add-topic .content .section:last-child {
   padding-bottom: 0;
+}
+
+.login-body {
+  background-image: url("../../assets/backgrounds/login-bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.small-margin {
+  margin: 2em;
+}
+
+.login-card {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+.login-card .card-title {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.login-card .card-body {
+  padding: 2rem;
+}
+.login-card .form-login {
+  width: 100%;
+}
+.login-card .form-login .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+.login-card .form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.login-card .form-label-group input {
+  height: auto;
+  padding: 8px;
+  border-radius: 2rem;
+}
+.login-card .btn-google {
+  background-color: #f14c4c;
+  color: white;
+}
+.login-card .btn-google:hover {
+  background-color: #e63b3b;
+}
+.login-card .btn-login {
+  background-color: #FF8811;
+  color: white;
+}
+.login-card .btn-login:hover {
+  background-color: #ec7c0c;
+}
+.login-card .btn-facebook {
+  background-color: #4e77ff;
+  color: white;
+}
+.login-card .btn-facebook:hover {
+  background-color: #466ae0;
+}
+
+.landing .welcome-left h5 {
+  margin-top: 4em;
+  font-size: 38px;
+  font-style: bold;
+}
+.landing .welcome-left p {
+  margin-top: 2em;
+  font-size: 21px;
+  width: 65%;
+}
+.landing .welcome-left .call-for-action {
+  background-color: #FF8811;
+  color: white;
+}
+.landing .welcome-left .call-for-action:hover {
+  background-color: #ec7c0c;
+}
+.landing .welcome-right img {
+  margin-top: 8em;
+  width: 100%;
+  height: auto;
+}
+.landing .row {
+  width: auto;
+}
+.landing .first-row {
+  height: 100%;
+  background-image: url("../../assets/backgrounds/welcome-bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
 /*# sourceMappingURL=styles.css.map */

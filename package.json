@@ -9,10 +9,13 @@
     "popper.js": "^1.15.0"
   },
   "devDependencies": {
-    "@types/bootstrap": "^4.3.1"
+    "@types/bootstrap": "^4.3.1",
+    "sass": "^1.22.12"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-c": "sass styles/styles.scss styles/css/styles.css",
+    "ts-c": "tsc js/logic.ts"
   },
   "author": "",
   "license": "ISC"
