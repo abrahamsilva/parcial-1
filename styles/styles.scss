@@ -9,6 +9,7 @@
 }
 .navbar-nav {
   margin-left: auto;
+
   .active {
     color: $lightBlue;
   }
@@ -27,7 +28,7 @@
 .big-wrapper {
   display: flex;
   width: 100%;
-
+  margin-top: 56px;
   .sidebar {
     padding: 1.5rem;
     padding-bottom: 5rem;
@@ -208,7 +209,7 @@
       max-width: 80%;
       margin-left: auto;
       margin-right: auto;
-      padding-top: 2rem;
+      padding-top: 5rem;
     }
     .card-deck {
       justify-content: space-evenly;
@@ -245,16 +246,16 @@
   }
 }
 
-.login-body{
+.login-body {
   //background: $lightBlue;
-  background-image: url("../../assets/backgrounds/login-bg.png");
+  background-image: url('../../assets/backgrounds/login-bg.png');
   background-repeat: no-repeat;
   background-position: left top;
 
   //background: linear-gradient(to right, $lightOrange, $lightYellow);
 }
 
-.small-margin{
+.small-margin {
   margin: $smallMargin;
 }
 
@@ -262,7 +263,6 @@
   border: 0;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
- 
 
   .card-title {
     margin-bottom: 2rem;
@@ -273,7 +273,7 @@
   .card-body {
     padding: 2rem;
   }
-  
+
   .form-login {
     width: 100%;
   }
@@ -281,7 +281,7 @@
   .form-login .btn {
     font-size: 80%;
     border-radius: 5rem;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     font-weight: bold;
     padding: 1rem;
     transition: all 0.2s;
@@ -294,85 +294,75 @@
 
   .form-label-group input {
     height: auto;
-    padding:8px;
+    padding: 8px;
     border-radius: 2rem;
   }
 
-  .btn-google{
+  .btn-google {
     background-color: rgb(241, 76, 76);
     color: white;
 
-    &:hover{
+    &:hover {
       background-color: rgb(230, 59, 59);
-
     }
   }
 
-  .btn-login{
+  .btn-login {
     background-color: $orange;
     color: white;
-    &:hover{
+    &:hover {
       background-color: $orangeHover;
-
     }
   }
 
-  .btn-facebook{
+  .btn-facebook {
     background-color: rgb(78, 119, 255);
     color: white;
-    &:hover{
+    &:hover {
       background-color: rgb(70, 106, 224);
     }
   }
 }
 
-.landing{
-
-  
-  .welcome-left{
-    h5{
-      margin-top: $smallMargin*2;
+.landing {
+  .welcome-left {
+    h5 {
+      margin-top: $smallMargin * 2;
       font-size: 38px;
       font-style: bold;
     }
 
-    p{
+    p {
       margin-top: $smallMargin;
       font-size: 21px;
       width: 65%;
     }
 
-    .call-for-action{
+    .call-for-action {
       background-color: $orange;
-      color:white;
-      &:hover{
+      color: white;
+      &:hover {
         background-color: $orangeHover;
       }
     }
-
   }
 
-  .welcome-right{
-
-    img{
+  .welcome-right {
+    img {
       margin-top: $smallMargin * 4;
 
       width: 100%;
       height: auto;
     }
-
   }
 
-  .row{
+  .row {
     width: auto;
   }
-  .first-row{
+  .first-row {
     height: 100%;
-    background-image: url("../../assets/backgrounds/welcome-bg.png");
+    background-image: url('../../assets/backgrounds/welcome-bg.png');
     background-repeat: no-repeat;
     background-position: left top;
   }
-
 }
-
-
