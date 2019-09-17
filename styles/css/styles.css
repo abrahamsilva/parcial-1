@@ -9884,6 +9884,13 @@ h3 {
   min-width: 300px;
   margin-bottom: 1.5rem;
 }
+.add-topic .content .card-deck .card:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+}
+.add-topic .content .card-deck .card:active {
+  background-color: #66bb6a;
+}
 .add-topic .content .card-deck .card .card-img-top {
   width: 100%;
   height: auto;

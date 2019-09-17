@@ -220,6 +220,13 @@
         max-width: 300px;
         min-width: 300px;
         margin-bottom: 1.5rem;
+        &:hover {
+          cursor: pointer;
+          background-color: $lightGrey;
+        }
+        &:active {
+          background-color: $green;
+        }
         .card-img-top {
           width: 100%;
           height: auto;
