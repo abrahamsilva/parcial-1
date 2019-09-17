@@ -10003,4 +10003,50 @@ h3 {
   background-position: left top;
 }
 
+.register-card {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+.register-card .card-title {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.register-card .card-body {
+  padding: 2rem;
+}
+.register-card .card-body .g-recaptcha {
+  position: relative;
+  left: 10%;
+  padding-bottom: 1rem;
+}
+.register-card .form-register {
+  width: 100%;
+}
+.register-card .form-register .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+.register-card .form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.register-card .form-label-group input {
+  height: auto;
+  padding: 8px;
+  border-radius: 2rem;
+}
+.register-card .btn-register {
+  background-color: #ff8811;
+  color: white;
+}
+.register-card .btn-register:hover {
+  background-color: #ec7c0c;
+}
+
 /*# sourceMappingURL=styles.css.map */
