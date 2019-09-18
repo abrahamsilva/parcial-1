@@ -10098,4 +10098,59 @@ h3 {
   background-color: #ec7c0c;
 }
 
+.topics .content {
+  padding: 1.5rem 3rem;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .topics .content {
+    padding: 1.5rem;
+  }
+}
+.topics .content .search-bar {
+  padding-bottom: 5rem;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+}
+.topics .content .card-deck {
+  justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  .topics .content .card-deck {
+    align-items: center;
+  }
+}
+.topics .content .card-deck .card {
+  max-width: 300px;
+  min-width: 300px;
+  margin-bottom: 1.5rem;
+}
+.topics .content .card-deck .card:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+}
+.topics .content .card-deck .card:active {
+  background-color: #66bb6a;
+}
+.topics .content .card-deck .card .card-img-top {
+  width: 100%;
+  height: auto;
+}
+.topics .content .section {
+  padding-bottom: 3rem;
+}
+.topics .content .section .title {
+  padding: 0.2rem 1rem;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+.topics .content .section .sports {
+  border-left: solid 0.7rem #ffbe33;
+}
+.topics .content .section:last-child {
+  padding-bottom: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
