@@ -10149,6 +10149,9 @@ h3 {
 .topics .content .section .sports {
   border-left: solid 0.7rem #ffbe33;
 }
+.topics .content .section .btn-danger {
+  font-size: 0.7rem;
+}
 .topics .content .section:last-child {
   padding-bottom: 0;
 }

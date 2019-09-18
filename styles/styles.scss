@@ -399,8 +399,6 @@
             font-size: 1.2rem;
             padding-bottom: 0.8rem;
           }
-          .text {
-          }
         }
       }
     }
@@ -521,9 +519,12 @@
         font-size: 1.7rem;
         margin-bottom: 2rem;
       }
-     
+
       .sports {
         border-left: solid 0.7rem $yellowMedium;
+      }
+      .btn-danger {
+        font-size: 0.7rem;
       }
     }
     .section:last-child {
