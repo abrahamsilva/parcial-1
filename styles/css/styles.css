@@ -10040,8 +10040,16 @@ h3 {
 .landing .third-row .carousel-caption {
   background-color: rgba(128, 128, 128, 0.527);
 }
-.landing .third-row .carousel-control-prev {
-  color: green;
+.landing .third-row .fa-chevron-right {
+  font-size: 7rem;
+  color: #66bb6a;
+}
+.landing .third-row .fa-chevron-left {
+  font-size: 7rem;
+  color: #66bb6a;
+}
+.landing .third-row .carousel-item img {
+  max-height: 400px;
 }
 
 .register-card {

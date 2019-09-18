@@ -410,8 +410,18 @@
     .carousel-caption {
       background-color: rgba(128, 128, 128, 0.527);
     }
-    .carousel-control-prev {
-      color: green;
+    .fa-chevron-right {
+      font-size: 7rem;
+      color: $green;
+    }
+    .fa-chevron-left {
+      font-size: 7rem;
+      color: $green;
+    }
+    .carousel-item {
+      img {
+        max-height: 400px;
+      }
     }
   }
 }
