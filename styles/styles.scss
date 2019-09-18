@@ -532,3 +532,37 @@
     }
   }
 }
+
+
+.profile{
+
+  .welcome{
+    margin-top: $smallMargin;
+    
+    img{
+      width: 100%;
+    }
+
+    .title{
+      padding: 2rem 0 0 5rem;
+    }
+
+    .name{
+      color: $orange;
+      padding: 0.5rem 0 0 5rem;
+    }
+
+    .info{
+      padding-left: 5rem;
+    }
+  }
+
+  .sign-out{
+    margin-left: 3.5em;
+
+    i{
+      margin-right: 1em;
+    }
+  }
+
+}
