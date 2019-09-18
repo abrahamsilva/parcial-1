@@ -333,6 +333,9 @@
 
 .landing {
   .welcome-left {
+    a {
+      color: white;
+    }
     h5 {
       margin-top: $smallMargin * 2;
       font-size: 38px;
@@ -368,9 +371,48 @@
   }
   .first-row {
     height: 100%;
+    padding: 5rem 0;
     background-image: url('../../assets/backgrounds/welcome-bg.png');
     background-repeat: no-repeat;
     background-position: left top;
+  }
+  .second-row {
+    background-color: $lightGrey;
+    padding: 5rem 0;
+    .features-image {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .features-text {
+      .wrapper-icon {
+        display: flex;
+        padding-bottom: 1.2rem;
+        .icon {
+          padding-right: 1.5rem;
+          color: $lightBlue;
+        }
+        .description {
+          .title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding-bottom: 0.8rem;
+          }
+          .text {
+          }
+        }
+      }
+    }
+  }
+  .third-row {
+    padding: 5rem 0;
+    .carousel-caption {
+      background-color: rgba(128, 128, 128, 0.527);
+    }
+    .carousel-control-prev {
+      color: green;
+    }
   }
 }
 
